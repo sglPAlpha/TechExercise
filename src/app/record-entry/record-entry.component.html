@@ -1,0 +1,30 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit(); recordEntryForm.reset();" #recordEntryForm="ngForm">
+
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" id="title"
+             required
+             [(ngModel)]="model.title"
+             name="title">
+    </div>
+
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="firstName"
+             required
+             [(ngModel)]="model.firstName"
+             name="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" id="lastName"
+             required
+             [(ngModel)]="model.lastName"
+             name="lastName">
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="!recordEntryForm.form.valid">Add</button>
+  </form>
+</div>

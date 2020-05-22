@@ -1,0 +1,27 @@
+.container {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.container + .container {
+  margin-top: 20px;
+}
+
+.recordFullName {
+  text-align: center;
+}
+
+.container-btn-remove {
+  width: 100%;
+  text-align: right;
+  display: inline-block;
+}
+
+.btn-remove {
+  width: 80px;
+  color: white;
+  border: 1px solid black;
+  background-color: red;
+  border-radius:  6px;
+}

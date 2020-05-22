@@ -1,0 +1,20 @@
+<div class="container" role="main">
+
+  <table>
+    <tr>
+      <td class="leftColumn">
+        <div class="container-record-list">
+          <app-record-list [records]="records" (removeEvent)="removeRecord($event)">
+          </app-record-list>
+        </div>
+      </td>
+
+      <td class="rightColumn">
+        <div class="container-record-entry">
+          <app-record-entry #entryComponent (submitEvent)="records.push($event);">
+          </app-record-entry>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,30 @@
+table {
+  width: 100%;
+  vertical-align: top;
+}
+
+tr {
+  width: 100%;
+}
+
+.leftColumn {
+  width: 50%;
+  vertical-align: top;
+  text-align: left;
+}
+
+.rightColumn {
+  width: 50%;
+  vertical-align: top;
+  text-align: right;
+}
+
+.container-record-list {
+  text-align: left;
+  display: inline-block;
+}
+
+.container-record-entry {
+  text-align: right;
+  display: inline-block;
+}

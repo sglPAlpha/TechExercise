@@ -1,0 +1,14 @@
+<div class="container" *ngFor="let record of records">
+  <h2>
+    {{ record.title }}
+  </h2>
+  <p class="recordFullName">
+    {{ record.firstName }} {{ record.lastName }}
+  <p>
+
+  <div class="container-btn-remove">
+    <button class="btn btn-remove" (click)="removeEvent.emit(record)">
+      Remove
+    </button>
+  </div>
+</div>
